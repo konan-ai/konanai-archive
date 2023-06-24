@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="konanai.png" alt="KonanAI Logo">
+  <img src="/misc/konanai.png" alt="KonanAI Logo">
 </div>
 
 <div align="center">
-  <img src="banner.png" alt="Banner With Phoenix">
+  <img src="/misc/banner.png" alt="Banner With Phoenix">
 </div>
