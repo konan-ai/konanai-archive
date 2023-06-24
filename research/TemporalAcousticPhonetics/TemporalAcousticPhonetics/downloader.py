@@ -16,15 +16,15 @@ def download_file(url, directory=None):
 
 
 def download_tap_checkpoint(directory=None):
-    url = 'https://raw.githubusercontent.com/konan-ai/konanai/main/research/TemporalAcousticPhonetics/tap_checkpoint.pt'
+    url = 'https://cmu.box.com/s/043aw8m3s5fhsviritddv2x4xv69rrmn'
     download_file(url, directory)
 
 
 def download_tap_transforms(directory=None):
-    url = 'https://raw.githubusercontent.com/konan-ai/konanai/main/research/TemporalAcousticPhonetics/tap_transforms.pt'
+    url = 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_transforms.pt'
     download_file(url, directory)
 
 
 def download_tap_examples(directory=None):
-    url = 'https://raw.githubusercontent.com/konan-ai/konanai/main/research/TemporalAcousticPhonetics/tap_examples.pt'
+    url = 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_examples.pt'
     download_file(url, directory)
