@@ -16,7 +16,7 @@ def download_file(url, directory=None):
 
 
 def download_tap_checkpoint(directory=None):
-    url = 'https://cmu.box.com/s/043aw8m3s5fhsviritddv2x4xv69rrmn'
+    url = 'https://cmu.box.com/shared/static/043aw8m3s5fhsviritddv2x4xv69rrmn'
     download_file(url, directory)
 
 
