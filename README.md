@@ -1,1 +1,1 @@
-# konanai
+![KonanAI Logo](konanai.png)
