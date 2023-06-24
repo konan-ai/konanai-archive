@@ -1,30 +1,37 @@
-import requests
 import os
+import requests
 
-def download_file(url, directory=None):
-    if directory is None:
-        directory = os.getcwd()
+URLS = {
+    "checkpoint": 'https://cmu.box.com/shared/static/043aw8m3s5fhsviritddv2x4xv69rrmn',
+    "transforms": 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_transforms.pt',
+    "examples": 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_examples.pt',
+}
 
-    local_filename = url.split('/')[-1]
-    with requests.get(url, stream=True) as r:
-        r.raise_for_status()
-        with open(os.path.join(directory, local_filename), 'wb') as f:
-            for chunk in r.iter_content(chunk_size=8192): 
-                f.write(chunk)
+FILENAMES = {
+    "checkpoint": "tap_checkpoint.pt",
+    "transforms": "tap_transforms.pt",
+    "examples": "tap_examples.pt",
+}
 
-    return local_filename
+def download_file(url, dest_folder, filename):
+    """
+    Downloads a file from the provided URL and saves it to the specified directory.
+    """
+    if not os.path.exists(dest_folder):
+        os.makedirs(dest_folder)  # Create directory
 
+    response = requests.get(url, stream=True)
+    if response.status_code == 200:
+        with open(os.path.join(dest_folder, filename), 'wb') as fp:
+            fp.write(response.content)
+    else:
+        print(f"Failed to download file from {url}")
 
-def download_tap_checkpoint(directory=None):
-    url = 'https://cmu.box.com/shared/static/043aw8m3s5fhsviritddv2x4xv69rrmn'
-    download_file(url, directory)
+def download_tap_checkpoint(directory='.'):
+    download_file(URLS["checkpoint"], directory, FILENAMES["checkpoint"])
 
+def download_tap_transforms(directory='.'):
+    download_file(URLS["transforms"], directory, FILENAMES["transforms"])
 
-def download_tap_transforms(directory=None):
-    url = 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_transforms.pt'
-    download_file(url, directory)
-
-
-def download_tap_examples(directory=None):
-    url = 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_examples.pt'
-    download_file(url, directory)
+def download_tap_examples(directory='.'):
+    download_file(URLS["examples"], directory, FILENAMES["examples"])
