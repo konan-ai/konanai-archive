@@ -21,7 +21,7 @@ class Estimator(torch.nn.Module):
         self.linear1 = torch.nn.Linear(512, 256)
         self.linear2 = torch.nn.Linear(256, 128)
         self.linear3 = torch.nn.Linear(128,  25)
-        self.linear4 = torch.nn.Linear( 25,  40)
+        self.linear4 = torch.nn.Linear( 25,  42)
 
         # Non-linear Activations
         self.gelu1 = torch.nn.GELU()
