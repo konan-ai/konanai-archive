@@ -3,8 +3,8 @@ import requests
 
 URLS = {
     "checkpoint": 'https://cmu.box.com/shared/static/043aw8m3s5fhsviritddv2x4xv69rrmn',
-    "transforms": 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_transforms.pt',
-    "examples": 'https://github.com/konan-ai/konanai/raw/main/research/TemporalAcousticPhonetics/TemporalAcousticPhonetics/tap_examples.pt',
+    "transforms": 'https://cmu.box.com/shared/static/gywgfl9mjq57vsj3vwscmlnnm5wpaays',
+    "examples": 'https://cmu.box.com/shared/static/dfv57ax0fkhqx6fzismssalafyr84b79'
 }
 
 FILENAMES = {
