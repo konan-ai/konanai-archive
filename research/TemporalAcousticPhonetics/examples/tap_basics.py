@@ -1,4 +1,4 @@
- ### Requires:
+### Requires:
 ### pip install git+https://github.com/konan-ai/konanai.git@main#subdirectory=research/TemporalAcousticPhonetics
 
 import torch
