@@ -7,3 +7,7 @@
 #### 2. **Example Of openSMILE's Temporal Acoustic Estimation:**
 - This Directory's Python Example is [`opensmile_basics.py`](https://github.com/konan-ai/konanai/blob/main/research/TemporalAcousticPhonetics/examples/opensmile_basics.py).
 - A Colab Notebook Python Example is [`linked here`](https://colab.research.google.com/drive/13JuMvfBOiPpFnlO3ywyZ_VNtvULCtG82?usp=sharing).
+
+### 3. **Example Of Charsiu's Temporal Phonetic Estimation:**
+- This Directory's PyTorch Example is ['charsiu_basics.py`](https://github.com/konan-ai/konanai/blob/main/research/TemporalAcousticPhonetics/examples/charsiu_basics.py)
+- A Colab Notebook PyTorch Example is [`linked here`](https://colab.research.google.com/drive/161-vKsyWaW325H2FLUBPhC0PRJJoKXon?usp=sharing)
