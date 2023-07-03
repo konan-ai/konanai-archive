@@ -32,3 +32,10 @@ For example:
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
 
+Function Summary
+===============
+
+.. automodule:: module_name
+   :members:
+   :undoc-members:
+   :show-inheritance:
