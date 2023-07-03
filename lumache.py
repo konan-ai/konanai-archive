@@ -23,6 +23,15 @@ def get_random_ingredients(kind=None):
     return ["shells", "gorgonzola", "parsley"]
 
 
+def not_get_random_ingredients(kind=None):
+    """
+    Bad description...
+    :return: The ingredients list.
+    :rtype: list[str]
+    """
+    return ["shells", "gorgonzola", "parsley"]
+
+
 class Conv1d(object):
     """Applies a 1D convolution over an input signal composed of several input
     planes.
