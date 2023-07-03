@@ -35,6 +35,6 @@ For example:
 Module Summary
 ==============
 
-.. automodule:: module_name
+.. automodule:: lumache
    :undoc-members:
    :show-inheritance:
