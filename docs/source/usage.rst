@@ -36,5 +36,6 @@ Module Summary
 ==============
 
 .. automodule:: lumache
+   :members:
    :undoc-members:
    :show-inheritance:
