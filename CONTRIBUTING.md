@@ -39,7 +39,7 @@ The sign-off confirms that the submitted work complies with the DCO requirements
 
 ## Reporting Bugs
 
-Bug tracking is conducted through GitHub's issue tracking feature. Report bugs by [opening a new issue](https://github.com/YourRepo/YourProject/issues/new).
+Bug tracking is conducted through GitHub's issue tracking feature. Report bugs by [opening a new issue](https://github.com/konan-ai/konanai/issues).
 
 When filing an issue, please provide a concise description of the issue, relevant background information, and if possible, steps to reproduce the issue. Including sample code that demonstrates the problem can greatly facilitate the process.
 
